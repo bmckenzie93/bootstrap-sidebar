@@ -1,0 +1,15 @@
+/* side bar composition */
+.flex {
+  display: flex; 
+  min-height: 100rem;
+}
+.filler-div {
+  background-color: black;
+  width: 60%;
+}
+
+.sidebar {
+  width: 40%;
+  background: #f4f4f4;
+}
+

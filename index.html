@@ -5,11 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
   <link rel="stylesheet" href="style.css">
   <title>bootstrap sidebar</title>
 </head>
 <body>
-  
+  <div class="flex">
+    <div class="sidebar">
+      <h1 class="logo text-center">NewCo</h1>
+      <div id="accordion">
+
+        <!-- parent 1 -->
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Main attendee site
+      </button>
+    </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <a href="#">Main attendee page</a>
+              </div>
+          </div>
+      </div>
+
+        <!-- Parent 2 -->
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0 d-inline">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Conference management
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body" id="child1">
+                  <!-- Parent 2 child a -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#" data-toggle="collapse" data-target="#collapseOneA">Conference settings</a>
+                        </div>
+                        <div class="card-body collapse" data-parent="#child1" id="collapseOneA">
+                          <div class="card">
+                            <div class="card-body">
+                              <a href="#" class="block">database settings</a>
+                            </div>
+                          </div>
+
+                          <div class="card">
+                            <div class="card-body">
+                              <a href="#" class="block">Event Information</a>
+                            </div>
+                          </div>
+
+
+                        </div>
+                    </div>
+                    <!-- Parent 2 child b -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#" data-toggle="collapse" data-target="#collapseOneB">Conference Properties</a>
+                        </div>
+                        <div class="card-body collapse" data-parent="#child1" id="collapseOneB">
+                          <div class="card">
+                            <div class="card-body">
+                              <a href="#" class="block">Attendee types</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- Parent 2 child c -->
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#" data-toggle="collapse" data-target="#collapseOneC">Styles, Assets, & Themes</a>
+                        </div>
+                        <div class="card-body collapse" data-parent="#child1" id="collapseOneC">
+                          <div class="card">
+                            <div class="card-body">
+                              <a href="#" class="block">Assets</a>
+                            </div>
+                          </div>
+
+                          <div class="card">
+                            <div class="card-body">
+                              <a href="#" class="block">Fonts</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Exhibitor registration site
+        </button>
+      </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="#">Exhibitor registration page</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="filler-div"></div>
+  </div>
+  </div>
 
 
 
@@ -18,8 +130,9 @@
 
 
   <!-- Bootstrap -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="man.js"></script>
 </body>
-</html>
+</html> 
