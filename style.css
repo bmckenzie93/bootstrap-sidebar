@@ -21,7 +21,7 @@
 
 .block {
   display: block;
-  padding: .5REM;
+  padding: .5rem;
 }
 
 
@@ -32,8 +32,8 @@
 .sidebar.active{
   width: 0%;
   background-color: white;
-  transition: all .5s ease;
 }
+
 .hide{
   display: none;
 }
