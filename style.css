@@ -13,3 +13,13 @@
   background: #f4f4f4;
 }
 
+
+.nav-dropdown{
+  display: inline-block;
+  min-width: 100%; 
+} 
+
+.block {
+  display: block;
+  padding: .5REM;
+}
